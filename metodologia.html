@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia de Simulação - COMAU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="LogoCOMAU(white).png" alt="Logo Comau" class="logo">
+        <h1>Metodologia de Simulação - COMAU</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#introducao">Introdução</a></li>
+                <li><a href="index.html#process-simulate">Process Simulate</a></li>
+                <li><a href="index.html#process-design">Process Design</a></li>
+                <li><a href="index.html#modelos">Clientes</a></li>
+                <li><a href="index.html#ferramentas">Ferramentas</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li>
+                    <div class="search-container">
+                        <img src="Lupa.png" alt="Buscar" id="search-icon" class="lupa">
+                        <input type="text" id="search-box" class="search-box" placeholder="Pesquisar...">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Metodologia de Simulação - COMAU</h2>
+
+            <h3>1. Escopo</h3>
+            <p>Este documento foi criado para alinhar as expectativas relacionadas ao fornecimento de material técnico necessário ao desenvolvimento de simulações e à programação de robôs off-line (OLP). Além de simplificar o entendimento das normas COMAU e do cliente, ele busca integrar todas as documentações normativas, garantindo eficiência e alta qualidade na execução dos projetos.</p>
+
+            <h3>2. Especificações Técnicas</h3>
+            <ul class="lista-metodologia">
+                <li><strong>2.1</strong> Todas as simulações devem ser realizadas utilizando o software <strong>Tecnomatix 15.1</strong> (Siemens) e controladores de robô, como <em>FANUC-8.30</em>, conforme especificado pelo cliente.</li>
+                <li><strong>2.2</strong> Cliente: Os documentos direcional do cliente, como <em>SOR</em> ou <em>GVOSS</em>, são essenciais para garantir que todas as atividades estejam em conformidade com os padrões esperados.</li>
+                <li><strong>2.3</strong> COMAU: O projeto segue diretrizes da COMAU com base em documentos como <em>Protocolo Técnico</em>, <em>Metodologia Simulação</em>, e <em>ProjectBook</em>.</li>
+            </ul>
+
+            <h3>3. Estrutura do Projeto</h3>
+            <p>Organizar o projeto de simulação de maneira eficaz é fundamental. A base do projeto abrange todos os elementos principais necessários para uma simulação robusta.</p>
+            <img src="Est_Geral.png" alt="Estrutura Geral" class="imagem-metodologia imagem-pequena">
+
+            <p><strong>3.2 Estrutura de Componentes Library:</strong> Inclui componentes reutilizáveis para diversos projetos, otimizando tempo e recursos.</p>
+            <p><strong>3.3 Estrutura de Operações/Recursos:</strong> Descrição de operações específicas e os recursos necessários para executá-las.</p>
+            <img src="Est_operações.png" alt="Operações e Recursos" class="imagem-metodologia imagem-pequena">
+
+            <p><strong>3.4 Estrutura de Produto:</strong> Detalhamento dos produtos simulados, incluindo características técnicas e funcionais.</p>
+            <img src="Est_Produto.png" alt="Estrutura de Produto" class="imagem-metodologia imagem-pequena">
+
+            <h3>4. Etapas da Metodologia</h3>
+            <p>O desenvolvimento do processo de simulação segue um fluxo detalhado, conforme as etapas do projeto, como descrito nos elementos abaixo.</p>
+            <img src="Modal_4.png" alt="Fluxograma Etapas" class="imagem-metodologia imagem-grande">
+            <img src="Modal_5.png" alt="Documentações por Etapas" class="imagem-metodologia imagem-grande">
+
+            <ul class="lista-metodologia">
+                <li><strong>STEP 0.1:</strong> Coleta inicial das normas, documentos, produtos e pontos de referência para um começo sólido.</li>
+                <li><strong>STEP 0.2:</strong> Coleta de fotos, vídeos e escaneamento 3D numa visita à planta, validando os processos vigentes.</li>
+                <li><strong>STEP 1:</strong> Definição e validação do conceito de célula e processo, abrangendo aspectos como acessos e manutenção de robôs.</li>
+                <li><strong>STEP 2:</strong> Liberação e aprovação de dispositivos padrões e componentes construtivos.</li>
+                <li><strong>STEP 3:</strong> Programação dos robôs utilizando macros, lógica e testes de ciclo de tempo.</li>
+                <li><strong>STEP 4:</strong> Integração virtual de OLP e CLP para eficiência na implementação.</li>
+                <li><strong>STEP 5:</strong> Alinhamento de atividades e handover com o time de campo.</li>
+                <li><strong>STEP 6:</strong> Recolher backups e atualizações para integrar nos layouts de células.</li>
+            </ul>
+
+            <h3>5. Documentações Requeridas</h3>
+            <ul class="lista-metodologia">
+                <li>As entregas oficiais devem ser feitas em <em>Pack and Go</em>; XML não é aceito.</li>
+                <li>Nuvem de Pinça, MultiSections e esquema de segurança do robô.</li>
+                <li>Payload preliminar e final.</li>
+                <li>Relatórios de tempo de ciclo, vídeos de validação e volumes de movimento dos robôs.</li>
+                <li>Manter mapas de colisão atualizados e downloads offline.</li>
+            </ul>
+
+            <p><strong>5.2 Nuvem de Pinça:</strong> Criação de nuvem de pinça com base na biblioteca do cliente/COMAU, gerando JT e atualização após OLP.</p>
+            <img src="Pinca_nuvem.png" alt="Nuvem de Pinça" class="imagem-metodologia imagem-pequena">
+
+            <p><strong>5.3 MultiSections:</strong> Desenvolvimento das multisections das pinças baseadas nos dados de solda, com envio da documentação para validação do fornecedor.</p>
+            <img src="Multi_Modal.png" alt="MultiSections Pinças" class="imagem-metodologia imagem-pequena">
+
+            <h3>6. Acompanhamento do Projeto</h3>
+            <ul class="lista-metodologia">
+                <li>Tabelas para controle de equipamentos usados nas células, com IDs de cada elemento.</li>
+                <li>Acompanhamento semanal de <em>Open Issues</em> e revisão do design com fornecedores.</li>
+                <li>Criação de registros para cada problema com solução proposta.</li>
+                <li>Preenchimento dos documentos de checklist conforme etapas.</li>
+                <li>Alinhamento com o time de VC e Site para cumprimento dos prazos.</li>
+                <li>Compilação e compartilhamento de aprendizados ao longo do projeto.</li>
+                <li>Documentação conforme padrão COMAU.</li>
+            </ul>
+
+            <p><em>Última atualização: 17 de março de 2021 — Vinicius Zatti (Digital Manufacturing)</em></p>
+        </section>
+
+        <div class="logo-equipe-container">
+            <img src="Team_LOGO.png" alt="Logo da Equipe" class="team-logo-contato">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Comau. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
