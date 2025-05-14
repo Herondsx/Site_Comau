@@ -434,7 +434,7 @@ footer {
         width: calc(100% - 120px);
         font-size: 0.8rem;
         line-height: 1.2;
-        transform: translateY(-15px); /* Levantar conteúdo alguns pixels para centralizar */
+        transform: translateY(-15px);
     }
 
 .info-contato h3 {
@@ -451,6 +451,17 @@ footer {
 
 .card-contato:hover .info-contato {
     opacity: 1;
-    transform: translateY(-1px) translateX(0); /* Manter elevação no hover para centralização */
+    transform: translateY(-1px) translateX(0); /* Manter elevaÃ§Ã£o no hover para centralizaÃ§Ã£o */
 }
 
+#licencas {
+    background-color: #fff;
+    padding: 20px;
+    white-space: pre-wrap;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Consolas, monospace;
+}
